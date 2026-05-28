@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ilowdnyvl11i"]
+
+[ext_resource type="Script" uid="uid://c5dod88050w11" path="res://scripts/timer.gd" id="1_srplv"]
+
+[node name="Timer" type="Timer" unique_id=1111299907]
+wait_time = 20.0
+one_shot = true
+autostart = true
+script = ExtResource("1_srplv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1512774321]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1257187734]
+offset_left = 48.0
+offset_top = 16.0
+offset_right = 216.0
+offset_bottom = 56.0
+text = "Time: "
+
+[connection signal="timeout" from="." to="." method="_on_timeout"]

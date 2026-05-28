@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ce4c68f4rwxf7"]
+
+[ext_resource type="PackedScene" uid="uid://de0yogwy1ppoc" path="res://scenes/map_1.tscn" id="1_w2twt"]
+[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="2_pw63i"]
+[ext_resource type="PackedScene" uid="uid://c5urc8nywgir0" path="res://scenes/player_2.tscn" id="3_7ykc4"]
+[ext_resource type="PackedScene" uid="uid://ilowdnyvl11i" path="res://scenes/timer.tscn" id="4_pu3yx"]
+
+[node name="MainScene" type="Node2D" unique_id=536522045]
+
+[node name="Map1" parent="." unique_id=411481384 instance=ExtResource("1_w2twt")]
+position = Vector2(0, 632)
+
+[node name="Player" parent="." unique_id=1955683976 instance=ExtResource("2_pw63i")]
+position = Vector2(40, 536)
+scale = Vector2(0.6, 0.6)
+
+[node name="Player2" parent="." unique_id=124296322 instance=ExtResource("3_7ykc4")]
+position = Vector2(680, 536)
+scale = Vector2(0.6, 0.6)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=71071146]
+position = Vector2(568, 280)
+
+[node name="Timer" parent="." unique_id=1111299907 instance=ExtResource("4_pu3yx")]

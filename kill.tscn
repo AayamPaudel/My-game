@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://stll7wwokrg0"]
+
+[ext_resource type="Script" uid="uid://c61enr6ax8hgs" path="res://scripts/kill.gd" id="1_kulms"]
+
+[node name="Kill" type="Area2D" unique_id=1803496967]
+script = ExtResource("1_kulms")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
